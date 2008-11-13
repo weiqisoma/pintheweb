@@ -1,0 +1,66 @@
+
+dialog {
+    width: 300px;
+    padding: 0 0 10px 0;
+    font-size: 12px;
+    font-family: Verdana;
+    background: #fff; 
+}
+
+#pintheweb-statusbar-button {
+  list-style-image: url("chrome://pintheweb/skin/statusbar.png");
+  display: -moz-box;
+  -moz-image-region: rect(16px, 16px, 32px, 0px);
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#pintheweb-statusbar-button[state="active"] { 
+  list-style-image: url("chrome://pintheweb/skin/statusbar.png");
+  -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+
+#pintheweb-statusbar-button[state="error"] {
+  list-style-image: url("chrome://pintheweb/skin/statusbar.png");
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#pintheweb-statusbar-label {
+  list-style-image: url("chrome://pintheweb/skin/statusbar.png");
+  display: -moz-box;
+  -moz-image-region: rect(16px, 16px, 32px, 0px);
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#pintheweb-statusbar-label[state="active"] { 
+  list-style-image: url("chrome://pintheweb/skin/statusbar.png");
+  -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+
+#pintheweb-statusbar-label[state="error"] {
+  list-style-image: url("chrome://pintheweb/skin/statusbar.png");
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+.pintheweb-pin{
+	background: url("chrome://pintheweb/skin/pin.png");
+	width: 32px;
+	height: 32px;
+	border: 1px solid red;
+}
+
+.ptw_pinnote {
+	clear: both;
+	border: 1px solid black;
+}
+
+html|a {
+    color: black;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+#content {
+    background: #fff; 
+    overflow: hidden;
+}

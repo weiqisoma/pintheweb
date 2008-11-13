@@ -1,0 +1,4 @@
+AddAccount=Introduce la información para la nueva cuenta
+AccountAdded=Cuenta "%S" añadida.
+RemoveAccountConfirm=¿Seguro que quieres BORRAR la cuenta "%S"?
+AccountRemoved=Cuenta "%S" eliminada.

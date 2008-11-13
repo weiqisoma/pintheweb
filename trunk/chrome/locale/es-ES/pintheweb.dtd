@@ -1,0 +1,22 @@
+<!ENTITY ptw.signin "Registro">
+<!ENTITY ptw.refresh "Recargar">
+<!ENTITY ptw.pushpin '"Click" para poner un pin'>
+<!ENTITY ptw.filter "Filtro">
+<!ENTITY ptw.public "Público">
+<!ENTITY ptw.friends "Amigos">
+<!ENTITY ptw.expand "Expandir">
+<!ENTITY ptw.allNotes "Todas">
+<!ENTITY ptw.none "Ninguna">
+<!ENTITY ptw.show_hide "Mostrar/Ocultar">
+<!ENTITY ptw.showAll "Mostrar todas">
+<!ENTITY ptw.hideAll "Ocultar todas">
+<!ENTITY ptw.settings "Opciones">
+<!ENTITY ptw.about "Acerca de">
+<!ENTITY ptw.followUser "Hacerse seguidor">
+<!ENTITY ptw.removePin "Quitar pin">
+<!ENTITY ptw.pinANote "Poner un pin">
+<!ENTITY ptw.expandAll "Expandir todas">
+<!ENTITY ptw.contractAll "Contraer todas">
+<!ENTITY ptw.help "Ayuda">
+<!ENTITY ptw.howtos "Preguntas frecuentes">
+<!ENTITY ptw.reportABug "Reportar un error">

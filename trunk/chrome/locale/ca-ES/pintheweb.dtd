@@ -1,0 +1,23 @@
+<!ENTITY ptw.signin "Registrar-se">
+<!ENTITY ptw.refresh "Recarregar">
+<!ENTITY ptw.pushpin '"Click" per posar un pin'>
+<!ENTITY ptw.filter "Filtre">
+<!ENTITY ptw.public "Públic">
+<!ENTITY ptw.friends "Amics">
+<!ENTITY ptw.expand "Expandir">
+<!ENTITY ptw.allNotes "Totes">
+<!ENTITY ptw.none "Cap">
+<!ENTITY ptw.show_hide "Mostra/Amaga">
+<!ENTITY ptw.showAll "Mostra totes">
+<!ENTITY ptw.hideAll "Amaga totes">
+<!ENTITY ptw.settings "Opcions">
+<!ENTITY ptw.about "Quant a">
+<!ENTITY ptw.followUser "Fer-se'n seguidor">
+<!ENTITY ptw.removePin "Treu pin">
+<!ENTITY ptw.pinANote "Posa un pin">
+<!ENTITY ptw.expandAll "Expandeix totes">
+<!ENTITY ptw.contractAll "Contrau totes">
+<!ENTITY ptw.help "Ajuda">
+<!ENTITY ptw.howtos "Preguntes freqüents">
+<!ENTITY ptw.reportABug "Reporta un error">
+

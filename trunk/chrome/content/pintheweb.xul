@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://pintheweb/skin/pintheweb.css" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://pintheweb/locale/pintheweb.dtd">
+
+<overlay id="pintheweb-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://pintheweb/content/utils.js"/>
+	<script type="application/x-javascript" src="chrome://pintheweb/content/pintheweb.js"/>
+	<script type="application/x-javascript" src="chrome://pintheweb/content/json.js"/>
+
+	<stringbundleset>
+		<stringbundle id="ptw-strings" src="chrome://pintheweb/locale/pintheweb.properties.dtd"/> 
+	</stringbundleset>
+
+	<menupopup id="main-menubar">
+    	<menu id="ptw-menu" label="PinTheWeb" insertbefore="helpMenu" accesskey="P" class="menuitem-iconic menu-iconic" image="chrome://pintheweb/skin/minipin.png" tooltiptext='pintheweb.com'>
+        	<menupopup id="ptw-popup">
+        	    <menuitem id="ptw-signin" label="&ptw.signin;" class="menuitem-iconic" image="chrome://pintheweb/skin/identity.png" oncommand="ptw.openURL('http://www.pintheweb.com/signin.php')"/>
+            	<menuseparator id="menu-sep"/>
+            	<menuitem id="ptw-reportabug" label="&ptw.reportABug;" oncommand="ptw.openURL('http://code.google.com/p/pintheweb/issues/entry')"/>
+            	<menuseparator id="menu-sep"/>
+            	<menu id="ptw-help" label="&ptw.help;">
+                	<menupopup id="ptw-help-pop">
+                    	<menuitem id="ptw-help-pop" label="&ptw.howtos;" oncommand="ptw.openURL('http://www.pintheweb.com/faq.php')"/>
+                	</menupopup>
+            	</menu>
+			</menupopup>
+		</menu>
+	</menupopup>
+	
+	<statusbar id="status-bar">
+		<popupset id="ptw-popupset">
+			<popup id="pintheweb-popup" position="after_start">
+				<menuitem label="&ptw.signin;" class="menuitem-iconic" image="chrome://pintheweb/skin/identity.png" default="true" oncommand="ptw.openURL('http://www.pintheweb.com/signin.php')"/>
+				<menuseparator/>
+				<menuitem label="&ptw.refresh;" class="menuitem-iconic" image="chrome://pintheweb/skin/reload.png" oncommand="ptw.refresh()"/>
+				<menuseparator/>
+				<menu id="new-menu" label="&ptw.filter;">
+					<menupopup id="new-popup">
+						<menuitem id="scope" label="&ptw.public;" type='checkbox' checked="true" oncommand="ptw.set_filter('public')"/>
+						<menuitem id="scope" label="&ptw.friends;" type='checkbox' checked="true" oncommand="ptw.set_filter('friends')"/>
+					</menupopup>
+				</menu>
+				<menu id="new-menu-2" label="&ptw.expand;">
+					<menupopup id="new-popup-2">
+						<menuitem id='expand' label="&ptw.allNotes;" oncommand="ptw.expand_all()"/>
+						<menuitem id='expand' label="&ptw.none;" oncommand="ptw.contract_all()"/>
+					</menupopup>
+				</menu>
+				<menu id="new-menu-3" label="&ptw.show_hide;">
+					<menupopup id="new-popup-3">
+						<menuitem id='show' label="&ptw.showAll;" oncommand="ptw.show_all()"/>
+						<menuitem id='show' label="&ptw.hideAll;" oncommand="ptw.hide_all()"/>
+					</menupopup>
+				</menu>
+				<menuseparator/>
+				<menuitem label="&ptw.settings;" class="menuitem-iconic" image="chrome://pintheweb/skin/configure.png" oncommand="ptw.settings()"/>
+				<menuseparator/>
+				<menuitem label="&ptw.about;" class="menuitem-iconic" image="chrome://pintheweb/skin/services.png" oncommand="ptw.about()"/>
+			</popup>
+		</popupset>
+
+		<statusbarpanel id="pintheweb-statusbar-label"
+			onpopupshowing=""
+			class="statusbarpanel-iconic-text"
+			context="pintheweb-popup"
+			ondblclick="ptw.openURL('http://www.pintheweb.com')"
+			onclick="return ptw.pin(event)"
+			label=""
+			src=""
+			tooltiptext="&ptw.pushpin;">
+		</statusbarpanel>
+	</statusbar>
+
+	<popup id="contentAreaContextMenu">
+		<menu id="new-contextmenu" label="Pin the Web" class="menuitem-iconic menu-iconic" image="chrome://pintheweb/skin/minipin.png" tooltiptext='pintheweb.com'>
+			<menupopup id="new-contextpopup">				
+				<menuitem id='follow' label="&ptw.followUser;" class="menuitem-iconic" image="chrome://pintheweb/skin/friends.png" oncommand="ptw.follow_user()"/>
+				<menuitem id='removepin' label="&ptw.removePin;" class="menuitem-iconic" image="chrome://pintheweb/skin/cancel.png" oncommand="ptw.remove_pin()"/>
+				<menuseparator/>
+				<menuitem id='refresh' label="&ptw.refresh;" class="menuitem-iconic" image="chrome://pintheweb/skin/reload.png" oncommand="ptw.refresh()"/>
+				<menuitem id='pinanote' label="&ptw.pinANote;" class="menuitem-iconic" image="chrome://pintheweb/skin/pin.png" oncommand="ptw.pin(event)"/>
+				<menuseparator/>
+				<menuitem id='showall' label="&ptw.showAll;" oncommand="ptw.show_all()"/>
+				<menuitem id='hideall' label="&ptw.hideAll;" oncommand="ptw.hide_all()"/>
+				<menuseparator/>
+				<menuitem id='expandall' label="&ptw.expandAll;" oncommand="ptw.expand_all()"/>
+				<menuitem id='contractall' label="&ptw.contractAll;" oncommand="ptw.contract_all()"/>			
+			</menupopup>
+		</menu>
+	</popup>
+
+</overlay>

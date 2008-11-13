@@ -1,0 +1,4 @@
+AddAccount=Enter new account information
+AccountAdded=Account "%S" has been added.
+RemoveAccountConfirm=Are you sure to remove this account "%S"?
+AccountRemoved=Account "%S" has been removed.

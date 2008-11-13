@@ -1,0 +1,9 @@
+content pintheweb chrome/content/ contentaccessible=yes
+skin pintheweb classic/1.0 chrome/skin/
+
+# Firefox
+overlay	chrome://browser/content/browser.xul chrome://pintheweb/content/pintheweb.xul
+
+locale	pintheweb	en-US	chrome/locale/en-US/
+locale	pintheweb	ca-ES	chrome/locale/ca-ES/
+locale	pintheweb	es-ES	chrome/locale/es-ES/

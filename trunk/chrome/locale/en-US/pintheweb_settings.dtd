@@ -1,0 +1,13 @@
+<!ENTITY ptw.title "PinTheWeb preferences">
+<!ENTITY ptw.accounts "Accounts">
+<!ENTITY ptw.username "Username">
+<!ENTITY ptw.password "Password">
+<!ENTITY ptw.addAccount "Add account...">
+<!ENTITY ptw.removeAccount "Remove account...">
+<!ENTITY ptw.preferences "Preferences">
+<!ENTITY ptw.refreshInterval "Get pins">
+<!ENTITY ptw.every3minutes "every 3 minutes">
+<!ENTITY ptw.every5minutes "every 5 minutes">
+<!ENTITY ptw.every10minutes "every 10 minutes">
+<!ENTITY ptw.every15minutes "every 15 minutes">
+<!ENTITY ptw.every30minutes "every 30 minutes">
