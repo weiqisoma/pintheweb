@@ -1,0 +1,22 @@
+<!ENTITY ptw.signin "Sign in">
+<!ENTITY ptw.refresh "Refresh">
+<!ENTITY ptw.pushpin '"Click" to pin a note'>
+<!ENTITY ptw.filter "Filter">
+<!ENTITY ptw.public "Public">
+<!ENTITY ptw.friends "Friends">
+<!ENTITY ptw.expand "Expand">
+<!ENTITY ptw.allNotes "All">
+<!ENTITY ptw.none "None">
+<!ENTITY ptw.show_hide "Show/Hide">
+<!ENTITY ptw.showAll "Show All">
+<!ENTITY ptw.hideAll "Hide All">
+<!ENTITY ptw.settings "Options">
+<!ENTITY ptw.about "About">
+<!ENTITY ptw.followUser "Follow user">
+<!ENTITY ptw.removePin "Remove pin">
+<!ENTITY ptw.pinANote "Push a pin">
+<!ENTITY ptw.expandAll "Expand all">
+<!ENTITY ptw.contractAll "Contract all">
+<!ENTITY ptw.help "Help">
+<!ENTITY ptw.howtos "FAQ">
+<!ENTITY ptw.reportABug "Report a bug">

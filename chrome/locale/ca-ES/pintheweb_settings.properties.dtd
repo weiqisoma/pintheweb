@@ -1,0 +1,5 @@
+AddAccount=Entrar informació del nou compte
+AccountAdded=Compte "%S" afegit.
+RemoveAccountConfirm=Estàs segur que vols esborrar el compte "%S"?
+AccountRemoved=El compte "%S"ha estat esborrat.
+

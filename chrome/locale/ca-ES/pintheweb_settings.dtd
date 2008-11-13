@@ -1,0 +1,13 @@
+<!ENTITY ptw.title "Preferències PinTheWeb">
+<!ENTITY ptw.accounts "Comptes">
+<!ENTITY ptw.username "Usuari">
+<!ENTITY ptw.password "Contrasenya">
+<!ENTITY ptw.addAccount "Afegir Compte">
+<!ENTITY ptw.removeAccount "Esborrar compte">
+<!ENTITY ptw.preferences "Preferències">
+<!ENTITY ptw.refreshInterval "Aconseguir pins">
+<!ENTITY ptw.every3minutes "cada 3 minuts">
+<!ENTITY ptw.every5minutes "cada 5 minuts">
+<!ENTITY ptw.every10minutes "cada 10 minuts">
+<!ENTITY ptw.every15minutes "cada 15 minuts">
+<!ENTITY ptw.every30minutes "cada 30 minuts">

@@ -1,0 +1,52 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+dialog {
+    width: 300px;
+    padding: 0 0 10px 0;
+    font-size: 12px;
+    font-family: Verdana;
+    background: #fff; 
+}
+
+#content {
+    background: #fff; 
+    overflow: hidden;
+}
+
+#logo {
+	width: 90px;
+	height: 90px;
+    list-style-image: url("logo.png");
+}
+
+#name-box {
+    padding: 10px;
+}
+
+#name {
+    font-size: 22px;
+}
+
+#version {
+    font-size: 12px;
+}
+
+#autor {
+    font-size: 14px;
+}
+
+#legal {
+    margin-top: 20px;
+    height: 150px;
+    padding: 0 1em;
+    background: white;
+    overflow: auto;
+}
+
+html|a {
+    color: black;
+    text-decoration: underline;
+    font-size: 12px;
+    outline: 0px;
+}
