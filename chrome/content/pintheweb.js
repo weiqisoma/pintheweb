@@ -27,14 +27,14 @@ var ptw = {
 	force_refresh: true,
 	filter_public: true,
 	filter_friends: true,
+	debug: false,
 	
 	/*
 	 *  Pin a note when click in the status panel
 	 */
 	pin: function(event)
 	{	
-		if (event.button != 2 && !this.pin_click_active) {
-			this.pin_click_active=true;
+		if (event.button != 2) {
 			window.top.content.document.removeEventListener("mouseover", ptw.pin_over, true);
 			window.top.content.document.removeEventListener("mouseout", ptw.pin_out, true);
 			window.top.content.document.removeEventListener("click",ptw.pin_click, true);
@@ -42,8 +42,7 @@ var ptw = {
 			window.top.content.document.addEventListener("click", this.pin_click, true);
 			window.top.content.document.addEventListener("mouseover", this.pin_over, true);
 			window.top.content.document.addEventListener("mouseout", this.pin_out, true);
-		}else if (this.pin_click_active == true) 
-			this.pin_click_active=false;
+		}
 	},
 	
 	/*
@@ -104,7 +103,7 @@ var ptw = {
 				innerNode.value=theUserRef+'"'+theNote+'"';
 				innerNode.style.border = "1px solid grey";
 				innerNode.setAttribute("readonly", "true");				
-				innerNode.style.overflow = "hidden";	
+				innerNode.style.overflow = "scroll";	
 			}
 			else
 			{
@@ -179,6 +178,7 @@ var ptw = {
 			return;
 		}	
 		var fullUrl = "http://www.pintheweb.com/services/followuser.php?user="+encodeURIComponent(ptw.user)+"&follow="+encodeURIComponent(follow);
+		
 		function infoReceived()
 		{
 			var output = httpRequest.responseText;
@@ -503,11 +503,17 @@ var ptw = {
   		ptw.password=ptw.logins[ptw.user];
   		ptw.pwdhash=md5(ptw.password);
 		
-		var fullUrl = "http://www.pintheweb.com/services/getpins.php?user="+encodeURIComponent(ptw.user)+"&pwd="+encodeURIComponent(ptw.pwdhash)+"&loc="+encodeURIComponent(loc);
+		if (this.debug)
+			var fullUrl = "http://www.pintheweb.com/dev_services/getpins.php?user="+encodeURIComponent(ptw.user)+"&pwd="+encodeURIComponent(ptw.pwdhash)+"&loc="+encodeURIComponent(loc);
+		else
+			var fullUrl = "http://www.pintheweb.com/services/getpins.php?user="+encodeURIComponent(ptw.user)+"&pwd="+encodeURIComponent(ptw.pwdhash)+"&loc="+encodeURIComponent(loc);
+		
+		if (this.debug==true) alert(fullUrl);
 		
 		function infoReceived()
 		{
 			var output = httpRequest.responseText;
+			if (ptw.debug==true) alert(output);
 			if (output.length)
 			{
 				var data = YBJSON.parse(output);	

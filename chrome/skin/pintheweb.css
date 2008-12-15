@@ -42,6 +42,7 @@ dialog {
   list-style-image: url("chrome://pintheweb/skin/statusbar.png");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
+
 .pintheweb-pin{
 	background: url("chrome://pintheweb/skin/pin.png");
 	width: 32px;

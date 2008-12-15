@@ -15,8 +15,9 @@ dialog {
 }
 
 #logo {
-	width: 90px;
-	height: 90px;
+	width: 70px;
+	height: 110px;
+	margin-left: 20px;
     list-style-image: url("logo.png");
 }
 
