@@ -6,7 +6,7 @@
   <Description about="urn:mozilla:install-manifest">
 
     <em:id>firefox@pintheweb.com</em:id>
-    <em:version>0.1</em:version>
+    <em:version>0.1.1</em:version>
     <em:type>2</em:type>
     
     <em:optionsURL>chrome://pintheweb/content/settings.xul</em:optionsURL>
